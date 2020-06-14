@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<style>
+
+    @media (min-width: 768px) {
+        #break{
+            margin-top: 3rem;
+        }
+    }
+
+</style>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="nav navbar-dark bg-dark">
+        <a class="navbar-brand ml-2" href="#">
+            <img src="https://www.placehold.it/30x30" width="30" height="30" alt="icon" loading="lazy">
+        </a>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: lightblue;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html" style="color: #ffffff;">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contact.html" style="color: #ffffff;">Contact<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Container -->
+    <div class="container-sm">
+        <!-- Heading -->
+        <div class="row mt-3 pl-3">
+            <header>
+                <h1 class="display-1">Omar's Portfolio</h1>
+                <p class="text-muted">A culmination of current works</p>
+            </header>
+        </div>
+
+        <!-- body -->
+        <section class="row">
+            <!-- image for portfolio w/ link -->
+            <div class="col-sm-7 mt-3">
+                <div class="card" style="width: 100%;">
+                    <img src="https://placehold.it/300x150" class="card-img-top img-fluid.max-width: 100%" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="portfolio.html" class="btn btn-dark btn-lg nav-link">Link to</a>
+                    </div>
+                </div>
+            </div>
+            <!-- block for contact email and text area -->
+            <div id="break" class="col-sm-5 mt-3">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Textarea</label>
+                                <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark mb-2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 mt-3">
+                        <div class="text-center">
+                            <img class="" src="http://placehold.it/50x50" alt="">
+                            <img class="" src="http://placehold.it/50x50" alt="">
+                            <img class="" src="http://placehold.it/50x50" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<!-- scripts for dropdown collapse nav to work -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+<!--     
+    <div class="container">
+        <div class="card border-dark mt-3">
+            <div class="row mt-3 ml-4">
+                <header class="mb-1">
+                    <h1>Contact:</h1>
+                </header>
+            </div>
+            <hr style="border: 2px solid grey;" class="mb-4 ml-3 mr-3">
+            <form class="ml-4 mr-4">
+                <div class="form-group">
+                    <label for="nameInput">Name</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="messageBox">Message</label>
+                    <textarea name="message" id="messageBox" class="form-control" rows="3"></textarea>
+                </div>
+                <button class="btn btn-dark mb-3" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+ -->
