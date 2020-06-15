@@ -20,8 +20,26 @@
     .nav-item {
         line-height: 50px;
     }
+    
+    #insideRow {
+        margin-bottom: 3rem;
+    }
+    #cardTitle {
+        position: absolute;
+        top: 75%;
+        left: 0;
+        width: 100%;
+        background-color: #eeeeee;
+        height: 3rem;
+        text-align: center;
+        line-height: 3rem;
+    }
 
     @media (min-width: 768px) {
+        #bodyMain{
+            width: 40rem;
+            margin-left: 4.5rem;
+        }
     }
 
 </style>
@@ -47,26 +65,53 @@
         </nav>
 
         <!-- image for portfolio w/ link -->
-        <section id="bodyMain" class="container mt-5 mb-2">
+        <section id="bodyMain" class="container my-5">
             <div class="card border-dark">
                 <div class="card-body">
                     <h1 class="mb-1">Portfolio</h1>
                     <hr style="border: 2px solid grey;" class="mb-4">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card bg-dark text-white">
-                                <img class="card-img" src="#" alt="Card image">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.placehold.it/100x75" class="img" alt="placehold" style="width: 100%;">
+                                <div class="card-img-overlay text-align-center">
+                                    <div id="cardTitle" class="h2">Project 1</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6"></div>
-                    </div>
-                    <div class="row"></div>
-                    <div class="row"></div>
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.placehold.it/100x75" class="img" alt="placehold" style="width: 100%;">
+                                <div class="card-img-overlay text-align-center">
+                                    <div id="cardTitle" class="h2">Project 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.placehold.it/100x75" class="img" alt="placehold" style="width: 100%;">
+                                <div class="card-img-overlay text-align-center">
+                                    <div id="cardTitle" class="h2">Project 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.placehold.it/100x75" class="img" alt="placehold" style="width: 100%;">
+                                <div class="card-img-overlay text-align-center">
+                                    <div id="cardTitle" class="h2">Project 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card h-100">
+                                <img src="https://www.placehold.it/100x75" class="img" alt="placehold" style="width: 100%;">
+                                <div class="card-img-overlay text-align-center">
+                                    <div id="cardTitle" class="h2">Project 5</div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </section>
