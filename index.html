@@ -21,8 +21,9 @@
     }
 
     @media (min-width: 768px) {
-        .card{
-            width: 40rem;
+        #bodyMain{
+            width: 40rem; 
+            margin-left: 4.5rem;
         }
     }
 
@@ -49,13 +50,12 @@
         </nav>
 
         <!-- body -->
-        <section class="container mt-5 mb-2" >
-            <!-- image for portfolio w/ link -->
+        <section id="bodyMain" class="container mt-5 mb-2">
             <div class="card border-dark">
                 <div class="card-body">
                     <h1>About me:</h1>
                     <hr style="border: 2px solid grey;" class="mb-4">
-                    <h5 class="card-title">Portfolio</h5>
+                    <h5 class="text-muted">Brief Summary</h5>
                     <img class="float-left mr-2 mb-2" src="https://www.placehold.it/150x150" alt="cat">
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat tempora recusandae eum odio omnis doloremque nesciunt ab eos, sequi eaque fuga molestiae fugit dolor quo labore libero. Quam, aliquid ex!Cum, repudiandae. Repellendus consectetur fugiat architecto, voluptatum fuga cupiditate earum facilis quae dolore blanditiis nisi porro quis atque ipsam minus suscipit quod vitae quo inventore, vero maxime doloremque quasi reprehenderit.</p>
                 </div>
@@ -65,9 +65,8 @@
 
     <footer class="footer mt-auto py-3 bg-light">
         <div class="container text-center">
-            <small>Copyright &copy; Omar Mata</small>
+            <p class="text-muted">Copyright &copy; Omar Mata</p>
         </div>
     </footer>
-
 </body>
 </html>

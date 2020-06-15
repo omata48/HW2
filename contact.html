@@ -22,8 +22,9 @@
     }
 
     @media (min-width: 768px) {
-        .card{
+        #bodyMain{
             width: 40rem;
+            margin-left: 4.5rem;
         }
     }
 
@@ -31,6 +32,7 @@
 
 <body class="d-flex flex-column h-100">
     <main role="main" class="flex-shrink-0">
+        <!-- Nav bar -->
         <nav class="nav navbar-dark bg-dark">
             <a class="navbar-brand ml-2" href="#">
                 <img src="https://www.placehold.it/30x30" width="30" height="30" alt="icon" loading="lazy">
@@ -48,32 +50,30 @@
             </ul>
         </nav>
 
-        <!-- content -->
-        <div class="container mb-2">
-            <div class="card border-dark mt-5">
-                <div class="row mt-3 ml-4">
-                    <header class="mb-1">
-                        <h1>Contact:</h1>
-                    </header>
+        <!-- body -->
+        <section id="bodyMain" class="container mt-5 mb-2">
+            <div class="card border-dark">
+                <div class="card-body">
+                    <header class="mb-1"><h1>Contact:</h1></header>
+                    <hr style="border: 2px solid grey;" class="mb-4">
+                    <form>
+                        <div class="form-group">
+                            <label for="nameInput">Name</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="messageBox">Message</label>
+                            <textarea name="message" id="messageBox" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button class="btn btn-dark mb-3" type="submit">Submit</button>
+                    </form>
                 </div>
-                <hr style="border: 2px solid grey;" class="mb-4 mx-3">
-                <form class="ml-4 mr-4">
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input type="text" class="form-control" id="nameInput" placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailInput">Email</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="example@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="messageBox">Message</label>
-                        <textarea name="message" id="messageBox" class="form-control" rows="3"></textarea>
-                    </div>
-                    <button class="btn btn-dark mb-3" type="submit">Submit</button>
-                </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer mt-auto py-3 bg-light">
